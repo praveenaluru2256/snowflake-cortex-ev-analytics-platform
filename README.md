@@ -184,11 +184,13 @@ Create aggregated business-ready analytical tables.
 
 Build AI-assisted business intelligence workflows.
 
-### AI Analytics Tables
-Table	                                    Business Use Case
-EV_FASTEST_GROWING_MANUFACTURERS	        Executive growth analysis
-EV_CHARGING_INFRASTRUCTURE_NEEDS	        Utility planning insights
-EV_TYPE_RANGE_ANALYSIS	                  EV performance intelligence
+## AI Analytics Tables
+
+| Table | Business Use Case |
+|-------|-------------------|
+| EV_FASTEST_GROWING_MANUFACTURERS | Executive growth analysis |
+| EV_CHARGING_INFRASTRUCTURE_NEEDS | Utility planning insights |
+| EV_TYPE_RANGE_ANALYSIS | EV performance intelligence |
 
 
 ## Cortex AI Use Cases
@@ -266,13 +268,14 @@ Implemented star-schema-inspired semantic modeling in Power BI.
 
 # Business Value Delivered
 
-Business                                            Impact	Value
-Duplicate record removal	                          Automated
-Manual SQL effort reduction	                        Improved using Cortex Code
-Executive reporting	                                Automated KPI dashboards
-AI-assisted analytics workflows	                    Implemented
-Interactive business intelligence	                  Enabled
-Infrastructure planning insights	                  Delivered
+| Business Impact | Value |
+|----------------|-------|
+| Duplicate record removal | Automated |
+| Manual SQL effort reduction | Improved using Cortex Code |
+| Executive reporting | Automated KPI dashboards |
+| AI-assisted analytics workflows | Implemented |
+| Interactive business intelligence | Enabled |
+| Infrastructure planning insights | Delivered |
 
 
 
