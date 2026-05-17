@@ -43,7 +43,6 @@ This project solves those challenges using Snowflake-based analytics engineering
 ## Medallion Architecture
 
 
-                  ## Architecture Overview
 
 ```mermaid
 flowchart TD
