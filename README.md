@@ -56,18 +56,10 @@ B --> C[SILVER LAYER<br>EV_POPULATION_SILVER<br><br>• Duplicate removal<br>•
 C --> D1[EV_ADOPTION_BY_MANUFACTURER]
 C --> D2[EV_GROWTH_BY_YEAR]
 C --> D3[EV_AVG_RANGE_BY_MAKE]
-```mermaid
-flowchart TD
-
-D1["CORTEX AI ANALYTICS LAYER<br><br>
-• EV Fastest Growing Manufacturers<br><br>
-• EV Charging Infrastructure Needs<br><br>
-• EV Type Range Analysis<br><br>
-AI-assisted business intelligence<br>
-using Cortex Code"]
-```
 
 
+
+D1 --> E[CORTEX AI ANALYTICS LAYER<br><br> • Ev_Fastest_Growing_Manufacturers <br> • Ev_Charging_Infrastructure_Needs <br><br> • Ev_Type_Range_Analysis <br><br> • AI-assisted business intelligence using Cortex Code]
 D2 --> E
 D3 --> E
 
