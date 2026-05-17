@@ -43,7 +43,7 @@ This project solves those challenges using Snowflake-based analytics engineering
 ### Medallion Architecture
 
 
-                     ┌─────────────────────────────┐
+                    ┌─────────────────────────────┐
                     │      Vehicle Dataset        │
                     │   CSV / Raw EV Population   │
                     └──────────────┬──────────────┘
@@ -78,7 +78,7 @@ This project solves those challenges using Snowflake-based analytics engineering
                 │
                 ▼
 ┌──────────────────────────────────────────────────────────────┐
-│                  CORTEX AI ANALYTICS LAYER                  │
+│                  CORTEX AI ANALYTICS LAYER                   │
 │                                                              │
 │ • EV_FASTEST_GROWING_MANUFACTURERS                           │
 │ • EV_CHARGING_INFRASTRUCTURE_NEEDS                           │
@@ -103,15 +103,17 @@ This project solves those challenges using Snowflake-based analytics engineering
                 
                 
 
-## Tech Stack     
-## Category        	                         |                   Technology
-1. Cloud Data Warehouse	                     |                   Snowflake
-2. AI Engineering	                           |                   Cortex Code
-3. SQL Processing	                           |                   Snowflake SQL
-4. BI Dashboard	                             |                   Power BI
-5. Version Control	                         |                   GitHub
-6. Architecture Pattern	                     |                   Medallion Architecture
-7. Data Modeling	                           |                   Star Schema Inspired Modeling
+## Tech Stack
+
+| Category | Technology |
+|----------|-------------|
+| Cloud Data Warehouse | Snowflake |
+| AI Engineering | Cortex Code |
+| SQL Processing | Snowflake SQL |
+| BI Dashboard | Power BI |
+| Version Control | GitHub |
+| Architecture Pattern | Medallion Architecture |
+| Data Modeling | Star Schema Inspired Modeling |
 
 
 ## Project Workflow
