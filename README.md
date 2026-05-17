@@ -7,16 +7,17 @@ and Power BI to analyze EV adoption trends, manufacturer market share, infrastru
 
 This project demonstrates modern analytics engineering concepts including:
 
-Medallion architecture
-Data quality engineering
-KPI modeling
-AI-assisted analytics workflows
-Executive dashboard development
-Interactive business intelligence reporting
+1. Medallion architecture
+2. Data quality engineering
+3. KPI modeling
+4. AI-assisted analytics workflows
+5. Executive dashboard development
+6. Interactive business intelligence reporting
 
 The platform transforms raw EV population data into business-ready insights using scalable cloud-native analytics architecture.
 
-Business Problem
+
+#### Business Problem
 
 Electric Vehicle adoption is growing rapidly, creating new challenges for:
 
