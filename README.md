@@ -101,154 +101,174 @@ This project solves those challenges using Snowflake-based analytics engineering
                 
                 
                 
-                Tech Stack
-Category	Technology
-Cloud Data Warehouse	Snowflake
-AI Engineering	Cortex Code
-SQL Processing	Snowflake SQL
-BI Dashboard	Power BI
-Version Control	GitHub
-Architecture Pattern	Medallion Architecture
-Data Modeling	Star Schema Inspired Modeling
-Project Workflow
-1. Bronze Layer — Raw Data Ingestion
-Objective
+                
+
+## Tech Stack     
+### Category	                                    ### Technology
+Cloud Data Warehouse	                                Snowflake
+AI Engineering	                                      Cortex Code
+SQL Processing	                                      Snowflake SQL
+BI Dashboard	                                        Power BI
+Version Control	                                      GitHub
+Architecture Pattern	                                Medallion Architecture
+Data Modeling	                                        Star Schema Inspired Modeling
+
+
+## Project Workflow
+### 1. Bronze Layer — Raw Data Ingestion
+### Objective
 
 Store raw EV population dataset in Snowflake.
 
-Key Features
-Raw CSV ingestion
-No transformations
-Source preservation
-Initial warehouse loading
-Table
-RAW_EV_POPULATION
-2. Silver Layer — Data Cleaning & Transformation
-Objective
+## Key Features
+   1. Raw CSV ingestion
+   2. No transformations
+   3. Source preservation
+   4. Initial warehouse loading
+
+## Table
+   RAW_EV_POPULATION
+
+   
+## 2. Silver Layer — Data Cleaning & Transformation
+
+## Objective
 
 Create analytics-ready cleansed dataset.
 
-Data Quality Improvements
-
+## Data Quality Improvements
 Implemented using Snowflake SQL and Cortex Code assistance:
+1. Removed duplicate VIN records using ROW_NUMBER()
+2. Standardized manufacturer names
+3. Converted inconsistent datatypes
+4. Handled missing values using COALESCE()
+5. Removed invalid records
+6. Improved analytical consistency
 
-Removed duplicate VIN records using ROW_NUMBER()
-Standardized manufacturer names
-Converted inconsistent datatypes
-Handled missing values using COALESCE()
-Removed invalid records
-Improved analytical consistency
-Key Transformations
+## Key Transformations
 ROW_NUMBER() OVER (
     PARTITION BY VIN
     ORDER BY DOL_VEHICLE_ID DESC
 )
 COALESCE(ELECTRIC_RANGE, 0)
-Table
+
+## Table
 EV_POPULATION_SILVER
-3. Gold Layer — Business KPI Modeling
-Objective
+## 3. Gold Layer — Business KPI Modeling
+## Objective
 
 Create aggregated business-ready analytical tables.
 
-Gold Tables
-Table	Purpose
-EV_ADOPTION_BY_MANUFACTURER	Market share and manufacturer KPIs
-EV_GROWTH_BY_YEAR	EV adoption growth trends
-EV_AVG_RANGE_BY_MAKE	EV performance analysis
-EV_UTILITY_PROVIDER_DEMAND	Infrastructure demand analysis
-Business KPIs Generated
-Total EV Vehicles
-Manufacturer Market Share
-BEV vs PHEV Distribution
-Year-over-Year Growth
-Average EV Driving Range
-Utility Infrastructure Demand
-Cortex AI Analytics Layer
-Objective
+## Gold Tables
+Table	                                         Purpose
+EV_ADOPTION_BY_MANUFACTURER	                   Market share and manufacturer KPIs
+EV_GROWTH_BY_YEAR	                             EV adoption growth trends
+EV_AVG_RANGE_BY_MAKE	                         EV performance analysis
+EV_UTILITY_PROVIDER_DEMAND	                   Infrastructure demand analysis
+
+## Business KPIs Generated
+1. Total EV Vehicles
+2. Manufacturer Market Share
+3. BEV vs PHEV Distribution
+4. Year-over-Year Growth
+5. Average EV Driving Range
+6. Utility Infrastructure Demand
+
+# Cortex AI Analytics Layer
+
+## Objective
 
 Build AI-assisted business intelligence workflows.
 
-AI Analytics Tables
-Table	Business Use Case
-EV_FASTEST_GROWING_MANUFACTURERS	Executive growth analysis
-EV_CHARGING_INFRASTRUCTURE_NEEDS	Utility planning insights
-EV_TYPE_RANGE_ANALYSIS	EV performance intelligence
-Cortex AI Use Cases
-Executive Reporting
+### AI Analytics Tables
+Table	                                    Business Use Case
+EV_FASTEST_GROWING_MANUFACTURERS	        Executive growth analysis
+EV_CHARGING_INFRASTRUCTURE_NEEDS	        Utility planning insights
+EV_TYPE_RANGE_ANALYSIS	                  EV performance intelligence
 
+
+## Cortex AI Use Cases
+### Executive Reporting
 Identify fastest-growing EV manufacturers and market leaders.
 
-Infrastructure Planning
-
+### Infrastructure Planning
 Analyze counties requiring charging infrastructure expansion.
 
-Market Intelligence
-
+### Market Intelligence
 Compare EV types and manufacturer performance.
 
-Cortex Code Usage
+## Cortex Code Usage
 
 Used Cortex Code for:
+1. SQL generation
+2. Data cleansing assistance
+3. KPI modeling
+4. AI analytics table creation
+5. Transformation optimization
 
-SQL generation
-Data cleansing assistance
-KPI modeling
-AI analytics table creation
-Transformation optimization
-Future AI Enhancement
-
+### Future AI Enhancement
 Architecture designed for future integration with:
 
 SNOWFLAKE.CORTEX.COMPLETE()
-
 for AI-generated executive summaries and intelligent business insights.
 
-Power BI Executive Dashboard
-Dashboard Features
-Executive KPI Cards
-Total EV Vehicles
-Total Manufacturers
-Average EV Range
-Top EV Manufacturer
-Interactive Analytics
-EV adoption growth trends
-Manufacturer market share analysis
-BEV vs PHEV comparison
-Dynamic slicers
-AI-generated executive insights
-Dashboard Filters
-Manufacturer
-Model Year
-Vehicle Type
-Data Modeling
+# Power BI Executive Dashboard
+
+## Dashboard Features
+
+### Executive KPI Cards
+1. Total EV Vehicles
+2. Total Manufacturers
+3. Average EV Range
+4. Top EV Manufacturer
+   
+### Interactive Analytics
+1. EV adoption growth trends
+2. Manufacturer market share analysis
+3. BEV vs PHEV comparison
+4. Dynamic slicers
+5. AI-generated executive insights
+   
+### Dashboard Filters
+1. Manufacturer
+2. Model Year
+3. Vehicle Type
+
+# Data Modeling
 
 Implemented star-schema-inspired semantic modeling in Power BI.
 
-Modeling Strategy
-SILVER layer used for dynamic filtering context
-GOLD tables used for KPI aggregation
-Dynamic DAX measures implemented for slicer-aware analytics
-Key Power BI Features
-Relationships
-DAX Measures
-Dynamic filtering
-Conditional formatting
-Interactive visualizations
-Key Business Insights
-Tesla dominates EV market adoption with highest BEV penetration.
-EV adoption accelerated significantly after 2023.
-Urban counties show highest charging infrastructure demand.
-Hybrid-heavy manufacturers reduce overall EV range averages.
-Long-range BEV adoption continues increasing across manufacturers.
-Business Value Delivered
-Business Impact	Value
-Duplicate record removal	Automated
-Manual SQL effort reduction	Improved using Cortex Code
-Executive reporting	Automated KPI dashboards
-AI-assisted analytics workflows	Implemented
-Interactive business intelligence	Enabled
-Infrastructure planning insights	Delivered
+### Modeling Strategy
+1. SILVER layer used for dynamic filtering context
+2. GOLD tables used for KPI aggregation
+3. Dynamic DAX measures implemented for slicer-aware analytics
+
+## Key Power BI Features
+1. Relationships
+2. DAX Measures
+3. Dynamic filtering
+4. Conditional formatting
+5. Interactive visualizations
+
+
+# Key Business Insights
+
+1. Tesla dominates EV market adoption with highest BEV penetration.
+2. EV adoption accelerated significantly after 2023.
+3. Urban counties show highest charging infrastructure demand.
+4. Hybrid-heavy manufacturers reduce overall EV range averages.
+5. Long-range BEV adoption continues increasing across manufacturers.
+
+
+# Business Value Delivered
+
+Business                                            Impact	Value
+Duplicate record removal	                          Automated
+Manual SQL effort reduction	                        Improved using Cortex Code
+Executive reporting	                                Automated KPI dashboards
+AI-assisted analytics workflows	                    Implemented
+Interactive business intelligence	                  Enabled
+Infrastructure planning insights	                  Delivered
 
 
 
