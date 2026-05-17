@@ -162,11 +162,13 @@ EV_POPULATION_SILVER
 Create aggregated business-ready analytical tables.
 
 ## Gold Tables
-Table	                                         Purpose
-EV_ADOPTION_BY_MANUFACTURER	                   Market share and manufacturer KPIs
-EV_GROWTH_BY_YEAR	                             EV adoption growth trends
-EV_AVG_RANGE_BY_MAKE	                         EV performance analysis
-EV_UTILITY_PROVIDER_DEMAND	                   Infrastructure demand analysis
+
+| Table | Purpose |
+|-------|----------|
+| EV_ADOPTION_BY_MANUFACTURER | Market share and manufacturer KPIs |
+| EV_GROWTH_BY_YEAR | EV adoption growth trends |
+| EV_AVG_RANGE_BY_MAKE | EV performance analysis |
+| EV_UTILITY_PROVIDER_DEMAND | Infrastructure demand analysis |
 
 ## Business KPIs Generated
 1. Total EV Vehicles
