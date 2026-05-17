@@ -104,14 +104,14 @@ This project solves those challenges using Snowflake-based analytics engineering
                 
 
 ## Tech Stack     
-## Category	                         |                   Technology
-1. Cloud Data Warehouse	             |                  Snowflake
-2. AI Engineering	                   |                   Cortex Code
-3. SQL Processing	                   |                   Snowflake SQL
-4. BI Dashboard	                     |                   Power BI
-5. Version Control	                 |                   GitHub
-6. Architecture Pattern	             |                   Medallion Architecture
-7. Data Modeling	                   |                   Star Schema Inspired Modeling
+## Category        	                         |                   Technology
+1. Cloud Data Warehouse	                     |                   Snowflake
+2. AI Engineering	                           |                   Cortex Code
+3. SQL Processing	                           |                   Snowflake SQL
+4. BI Dashboard	                             |                   Power BI
+5. Version Control	                         |                   GitHub
+6. Architecture Pattern	                     |                   Medallion Architecture
+7. Data Modeling	                           |                   Star Schema Inspired Modeling
 
 
 ## Project Workflow
