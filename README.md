@@ -17,7 +17,7 @@ This project demonstrates modern analytics engineering concepts including:
 The platform transforms raw EV population data into business-ready insights using scalable cloud-native analytics architecture.
 
 
-#### Business Problem
+## Business Problem
 
 Electric Vehicle adoption is growing rapidly, creating new challenges for:
 
