@@ -21,25 +21,26 @@ The platform transforms raw EV population data into business-ready insights usin
 
 Electric Vehicle adoption is growing rapidly, creating new challenges for:
 
-EV manufacturers
-Utility providers
-Infrastructure planners
-Government agencies
-Market analysts
+1. EV manufacturers
+2. Utility providers
+3. Infrastructure planners
+4. Government agencies
+5. Market analysts
 
 Organizations require:
 
-real-time EV adoption insights,
-manufacturer growth analysis,
-charging infrastructure demand forecasting,
-EV performance comparisons,
-executive-level analytics dashboards.
+1. real-time EV adoption insights,
+2. manufacturer growth analysis,
+3. charging infrastructure demand forecasting,
+4. EV performance comparisons,
+5. executive-level analytics dashboards.
 
 This project solves those challenges using Snowflake-based analytics engineering and AI-assisted business intelligence.
 
 
-Architecture Overview
-Medallion Architecture
+## Architecture Overview
+
+### Medallion Architecture
 
 
                      ┌─────────────────────────────┐
