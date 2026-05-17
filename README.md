@@ -1,4 +1,4 @@
-# snowflake-cortex-ev-analytics-platform
+# Snowflake-cortex-ev-analytics-platform
 
 ## Project Overview
 
