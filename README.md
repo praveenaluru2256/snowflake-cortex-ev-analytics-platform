@@ -104,7 +104,7 @@ This project solves those challenges using Snowflake-based analytics engineering
                 
 
 ## Tech Stack     
-## Category	                                    ## Technology
+## Category	                                          Technology
 Cloud Data Warehouse	                                Snowflake
 AI Engineering	                                      Cortex Code
 SQL Processing	                                      Snowflake SQL
