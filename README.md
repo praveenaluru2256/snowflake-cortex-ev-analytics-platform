@@ -57,7 +57,7 @@ C --> D1[EV_ADOPTION_BY_MANUFACTURER]
 C --> D2[EV_GROWTH_BY_YEAR]
 C --> D3[EV_AVG_RANGE_BY_MAKE]
 
-D1 --> E[CORTEX AI ANALYTICS LAYER<br><br> • Ev_Fastest_Growing_Manufacturers<br> • Ev_Charging_Infrastructure_Needs<br><br> • Ev_Type_Range_Analysis<br><br> • AI-assisted business intelligence using Cortex Code]
+D1 --> E[CORTEX AI ANALYTICS LAYER<br><br> • Ev_Fastest_Growing_Manufacturers <br> • Ev_Charging_Infrastructure_Needs <br><br> • Ev_Type_Range_Analysis <br><br> • AI-assisted business intelligence using Cortex Code]
 
 D2 --> E
 D3 --> E
