@@ -104,7 +104,7 @@ This project solves those challenges using Snowflake-based analytics engineering
                 
 
 ## Tech Stack     
-### Category	                                    ### Technology
+## Category	                                    ## Technology
 Cloud Data Warehouse	                                Snowflake
 AI Engineering	                                      Cortex Code
 SQL Processing	                                      Snowflake SQL
@@ -115,8 +115,8 @@ Data Modeling	                                        Star Schema Inspired Model
 
 
 ## Project Workflow
-### 1. Bronze Layer — Raw Data Ingestion
-### Objective
+## 1. Bronze Layer — Raw Data Ingestion
+## Objective
 
 Store raw EV population dataset in Snowflake.
 
