@@ -42,7 +42,7 @@ This project solves those challenges using Snowflake-based analytics engineering
 
 ## Medallion Architecture
 
-```text
+
                     ┌─────────────────────────────┐
                     │      Vehicle Dataset        │
                     │   CSV / Raw EV Population   │
