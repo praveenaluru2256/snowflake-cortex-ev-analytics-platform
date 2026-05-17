@@ -43,62 +43,28 @@ This project solves those challenges using Snowflake-based analytics engineering
 ## Medallion Architecture
 
 
-                    ┌─────────────────────────────┐
-                    │      Vehicle Dataset        │
-                    │   CSV / Raw EV Population   │
-                    └──────────────┬──────────────┘
-                                   │
-                                   ▼
-                    ┌─────────────────────────────┐
-                    │        BRONZE LAYER         │
-                    │   RAW_EV_POPULATION table   │
-                    │ Raw ingestion into Snowflake│
-                    └──────────────┬──────────────┘
-                                   │
-                                   ▼
-                    ┌─────────────────────────────┐
-                    │        SILVER LAYER         │
-                    │ EV_POPULATION_SILVER        │
-                    │                             │
-                    │ • Duplicate removal         │
-                    │ • Null handling             │
-                    │ • Datatype conversion       │
-                    │ • Data standardization      │
-                    │ • Data quality validation   │
-                    └──────────────┬──────────────┘
-                                   │
-                ┌──────────────────┼──────────────────┐
-                │                  │                  │
-                ▼                  ▼                  ▼
-┌────────────────────────┐ ┌──────────────────────┐ ┌────────────────────────┐
-│      GOLD LAYER        │ │      GOLD LAYER      │ │      GOLD LAYER        │
-│ EV_ADOPTION_BY_        │ │ EV_GROWTH_BY_YEAR    │ │ EV_AVG_RANGE_BY_MAKE   │
-│ MANUFACTURER           │ │                      │ │                        │
-└────────────────────────┘ └──────────────────────┘ └────────────────────────┘
-                │
-                ▼
-┌──────────────────────────────────────────────────────────────┐
-│                CORTEX AI ANALYTICS LAYER                    │
-│                                                              │
-│ • EV_FASTEST_GROWING_MANUFACTURERS                           │
-│ • EV_CHARGING_INFRASTRUCTURE_NEEDS                           │
-│ • EV_TYPE_RANGE_ANALYSIS                                     │
-│                                                              │
-│ AI-assisted business intelligence using Cortex Code          │
-└──────────────────────────────┬───────────────────────────────┘
-                               │
-                               ▼
-                ┌─────────────────────────────┐
-                │      POWER BI DASHBOARD     │
-                │                             │
-                │ • Executive KPIs            │
-                │ • Market Share Analysis     │
-                │ • EV Adoption Trends        │
-                │ • Infrastructure Insights   │
-                │ • AI Executive Insights     │
-                └─────────────────────────────┘
-                
-                
+                  ## Architecture Overview
+
+```mermaid
+flowchart TD
+
+A[Vehicle Dataset<br>CSV / Raw EV Population]
+
+A --> B[BRONZE LAYER<br>RAW_EV_POPULATION table<br>Raw ingestion into Snowflake]
+
+B --> C[SILVER LAYER<br>EV_POPULATION_SILVER<br><br>• Duplicate removal<br>• Null handling<br>• Datatype conversion<br>• Data standardization<br>• Data quality validation]
+
+C --> D1[EV_ADOPTION_BY_MANUFACTURER]
+C --> D2[EV_GROWTH_BY_YEAR]
+C --> D3[EV_AVG_RANGE_BY_MAKE]
+
+D1 --> E[CORTEX AI ANALYTICS LAYER<br><br>• EV_FASTEST_GROWING_MANUFACTURERS<br>• EV_CHARGING_INFRASTRUCTURE_NEEDS<br>• EV_TYPE_RANGE_ANALYSIS<br><br>AI-assisted business intelligence using Cortex Code]
+
+D2 --> E
+D3 --> E
+
+E --> F[POWER BI DASHBOARD<br><br>• Executive KPIs<br>• Market Share Analysis<br>• EV Adoption Trends<br>• Infrastructure Insights<br>• AI Executive Insights]
+```
                 
                 
 
