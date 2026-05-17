@@ -1,0 +1,1 @@
+# snowflake-cortex-ev-analytics-platform
