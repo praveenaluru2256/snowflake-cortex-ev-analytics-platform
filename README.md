@@ -40,9 +40,9 @@ This project solves those challenges using Snowflake-based analytics engineering
 
 ## Architecture Overview
 
-### Medallion Architecture
+## Medallion Architecture
 
-
+```text
                     ┌─────────────────────────────┐
                     │      Vehicle Dataset        │
                     │   CSV / Raw EV Population   │
@@ -52,7 +52,7 @@ This project solves those challenges using Snowflake-based analytics engineering
                     ┌─────────────────────────────┐
                     │        BRONZE LAYER         │
                     │   RAW_EV_POPULATION table   │
-                    │  Raw ingestion into Snowflake│
+                    │ Raw ingestion into Snowflake│
                     └──────────────┬──────────────┘
                                    │
                                    ▼
@@ -70,15 +70,17 @@ This project solves those challenges using Snowflake-based analytics engineering
                 ┌──────────────────┼──────────────────┐
                 │                  │                  │
                 ▼                  ▼                  ▼
+
 ┌────────────────────────┐ ┌──────────────────────┐ ┌────────────────────────┐
-│    GOLD LAYER          │ │   GOLD LAYER         │ │    GOLD LAYER          │
-│EV_ADOPTION_BY_         │ │EV_GROWTH_BY_YEAR     │ │EV_AVG_RANGE_BY_MAKE   │
-│MANUFACTURER            │ │                      │ │                        │
+│      GOLD LAYER        │ │      GOLD LAYER      │ │      GOLD LAYER        │
+│ EV_ADOPTION_BY_        │ │ EV_GROWTH_BY_YEAR    │ │ EV_AVG_RANGE_BY_MAKE   │
+│ MANUFACTURER           │ │                      │ │                        │
 └────────────────────────┘ └──────────────────────┘ └────────────────────────┘
                 │
                 ▼
+
 ┌──────────────────────────────────────────────────────────────┐
-│                  CORTEX AI ANALYTICS LAYER                   │
+│                CORTEX AI ANALYTICS LAYER                    │
 │                                                              │
 │ • EV_FASTEST_GROWING_MANUFACTURERS                           │
 │ • EV_CHARGING_INFRASTRUCTURE_NEEDS                           │
@@ -88,6 +90,7 @@ This project solves those challenges using Snowflake-based analytics engineering
 └──────────────────────────────┬───────────────────────────────┘
                                │
                                ▼
+
                 ┌─────────────────────────────┐
                 │      POWER BI DASHBOARD     │
                 │                             │
@@ -97,7 +100,6 @@ This project solves those challenges using Snowflake-based analytics engineering
                 │ • Infrastructure Insights   │
                 │ • AI Executive Insights     │
                 └─────────────────────────────┘
-                
                 
                 
                 
