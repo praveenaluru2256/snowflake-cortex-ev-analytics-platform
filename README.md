@@ -96,6 +96,27 @@ Medallion Architecture
                 └─────────────────────────────┘
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Tech Stack
 Category	Technology
 Cloud Data Warehouse	Snowflake
