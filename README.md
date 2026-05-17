@@ -1,6 +1,6 @@
 # snowflake-cortex-ev-analytics-platform
 
---Project Overview
+##Project Overview
 
 Built an end-to-end AI-powered Electric Vehicle (EV) analytics platform using Snowflake, Cortex Code, SQL, and Power BI to analyze EV adoption trends, manufacturer market share, infrastructure demand, and EV performance metrics.
 
